@@ -34,6 +34,7 @@ h2 {
 
 .portfolio-gallery {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
@@ -47,6 +48,13 @@ h2 {
 
 .portfolio-gallery a:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .portfolio-gallery img {
+        width: 100px;
+        height: 70px;
+    }
 }
 
 .portfolio-gallery img {
@@ -90,6 +98,15 @@ h2 {
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #1e90ff;
+}
+
+@media (max-width: 600px) {
+    .profile {
+        position: static;
+        margin: 0 auto 20px;
+        width: 80px;
+        height: 80px;
+    }
 }
 
 .animation-container {
