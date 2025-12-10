@@ -3,60 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Valente - SRE & DevOps</title>
+    <title>Mario Valente - SRE & DevOps Specialist</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" type="image/png" href="./images/profile.png">
-
 </head>
 <body>
-    <div class="profile">
-        <img src="./images/profile.png" alt="Mario Valente" class="profile-image">
-    </div>
-    <h1>Mario Valente</h1>
-    <p>SRE | DevOps | Go | Kubernetes | Docker | Observability | Python developer | CICD | </p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Mario Valente</div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="./devops-consulting.html">DevOps Consulting</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <section class="description">
+    <div class="hero">
+        <div class="profile">
+            <img src="./images/profile.png" alt="Mario Valente" class="profile-image">
+        </div>
+        <h1>Mario Valente</h1>
+        <p class="subtitle">SRE | DevOps | Observability | Technical Leadership</p>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+
+    <section id="about" class="description">
         <h2>About Me</h2>
         <p>
-            I'm a passionate professional with a background in Systems Analysis and ongoing studies in Arquitecture and Cloud.
-            With 4 and a half years of experience in the technology field, I currently thrive as an SRE/DevOps specialist.
-            My focus lies in honing expertise in cutting-edge tools for infrastructure and application resilience.
-            Proficient in automation languages such as GO, Node.js, and Python, I excel in optimizing processes and enhancing API performance.
-            My forte is Docker, and I am dedicated to staying at the forefront of technology to drive innovation and efficiency in the ever-evolving tech landscape.
+            I'm a passionate professional with a background in Systems Analysis and ongoing studies in Architecture and Cloud.
+            With 4+ years of experience in the technology field, I thrive as an SRE/DevOps specialist with deep expertise in infrastructure resilience and observability.
         </p>
         <p>
-            I am the creator of the "Observability in Deep" course, where I share my knowledge on monitoring, tracing, and logging strategies for robust applications.
-            Additionally, I hold the Certified Kubernetes Administrator (CKA) certification, demonstrating my expertise in managing and automating Kubernetes clusters.
-            I am driven by solving high-complexity problems and thrive in leadership roles. My ability to communicate effectively and work well with people allows me to build strong, high-performing teams.
+            My focus lies in honing expertise in cutting-edge tools for infrastructure automation, containerization, and application monitoring.
+            Proficient in automation languages such as Go, Node.js, and Python, I excel in optimizing processes and enhancing system performance and reliability.
+        </p>
+        <p>
+            I am the creator of the <strong>"Observability in Deep"</strong> course, where I share my knowledge on monitoring, tracing, and logging strategies for robust applications.
+            Additionally, I hold the <strong>Certified Kubernetes Administrator (CKA)</strong> certification, demonstrating my expertise in managing and automating Kubernetes clusters.
+        </p>
+        <p>
+            I am driven by solving high-complexity problems and thrive in technical leadership roles. My ability to communicate effectively and work well with teams allows me to build strong, high-performing engineering organizations.
         </p>
     </section>
-    <section class="portfolio">
-        <h2>Portfolio</h2>
+
+    <section id="skills" class="skills-section">
+        <h2>Core Competencies</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Cloud & Infrastructure</h3>
+                <ul class="skills">
+                    <li>Kubernetes & Docker</li>
+                    <li>Terraform & IaC</li>
+                    <li>AWS & Cloud Architecture</li>
+                    <li>CI/CD Pipelines</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Observability & Monitoring</h3>
+                <ul class="skills">
+                    <li>Prometheus & Grafana</li>
+                    <li>ELK Stack & Logging</li>
+                    <li>Distributed Tracing</li>
+                    <li>APM Solutions</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Programming & Automation</h3>
+                <ul class="skills">
+                    <li>Go (Golang)</li>
+                    <li>Python</li>
+                    <li>Node.js</li>
+                    <li>Rust</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Technical Leadership</h3>
+                <ul class="skills">
+                    <li>Team Building</li>
+                    <li>Process Optimization</li>
+                    <li>Architecture Design</li>
+                    <li>Knowledge Sharing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio & Projects</h2>
         <div class="portfolio-gallery">
-            <a href="https://github.com/Mario-Valente/treinamento-terraform" target="_blank">
-                <img src="./images/terraform.png" alt="Lab 1">
+            <a href="https://github.com/Mario-Valente/treinamento-terraform" target="_blank" class="portfolio-item">
+                <img src="./images/terraform.png" alt="Terraform Training">
+                <p>Terraform Training Lab</p>
             </a>
-            <a href="https://meu-laboratorio2.com" target="_blank">
-                <img src="./images/k8s.png" alt="Lab 2">
+            <a href="https://github.com/Mario-Valente/shenlong" target="_blank" class="portfolio-item">
+                <img src="./images/golang.png" alt="Shenlong Go Project">
+                <p>Go Projects</p>
             </a>
-            <a href="https://github.com/Mario-Valente/shenlong" target="_blank">
-                <img src="./images/golang.png" alt="Lab 3">
+            <a href="https://github.com/Mario-Valente/strimzi-poc" target="_blank" class="portfolio-item">
+                <img src="./images/kafka.png" alt="Kafka Strimzi">
+                <p>Kafka & Strimzi POC</p>
             </a>
-            <a href="https://github.com/Mario-Valente/strimzi-poc" target="_blank">
-                <img src="./images/kafka.png" alt="Lab 4">
-            </a>
-            <a href="https://github.com/Mario-Valente/probe-api"
-                target="_blank">
-                 <img src="./images/rust.png" alt="Lab 5">
+            <a href="https://github.com/Mario-Valente/probe-api" target="_blank" class="portfolio-item">
+                <img src="./images/rust.png" alt="Probe API Rust">
+                <p>Rust Projects</p>
             </a>
         </div>
     </section>
 
-    <div class="links">
-        <a href="https://www.linkedin.com/in/mario-barbosa-valent/" target="_blank">LinkedIn</a>
-        <a href="https://www.instagram.com/mariovalente.dev/" target="_blank">Instagram</a>
-        <a href="https://www.youtube.com/@MarioValente-jc3tc" target="_blank">YouTube</a>
-        <a href="https://www.youtube.com/watch?v=30SVQCJ4TBg&list=PL6o9L5ukTTEOtEsbMn377QfgYi_dn6Hor" target="_blank">Observability in deep course</a>
-    </div>
+    <section id="contact" class="contact-section">
+        <h2>Let's Work Together</h2>
+        <p>Whether you need DevOps consulting, infrastructure optimization, or technical leadership, I'm here to help.</p>
+        <div class="contact-methods">
+            <a href="mailto:mariobarbosavalente@gmail.com" class="contact-btn email-btn">
+                <span class="btn-icon">✉</span> Email
+            </a>
+            <a href="https://www.linkedin.com/in/mario-barbosa-valent/" target="_blank" class="contact-btn linkedin-btn">
+                <span class="btn-icon">in</span> LinkedIn
+            </a>
+            <a href="https://www.instagram.com/mariovalente.dev/" target="_blank" class="contact-btn instagram-btn">
+                <span class="btn-icon">📷</span> Instagram
+            </a>
+            <a href="https://www.youtube.com/@MarioValente-jc3tc" target="_blank" class="contact-btn youtube-btn">
+                <span class="btn-icon">▶</span> YouTube
+            </a>
+            <a href="https://www.youtube.com/watch?v=30SVQCJ4TBg&list=PL6o9L5ukTTEOtEsbMn377QfgYi_dn6Hor" target="_blank" class="contact-btn course-btn">
+                <span class="btn-icon">📚</span> Observability Course
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Mario Valente. All rights reserved.</p>
+    </footer>
 </body>
 </html>
