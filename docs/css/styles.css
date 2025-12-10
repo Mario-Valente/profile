@@ -2,6 +2,11 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -37,9 +42,12 @@ p {
     background-color: rgba(17, 17, 17, 0.9);
     padding: 30px;
     margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     border-radius: 15px;
-    max-width: 90%;
-    width: 800px;
+    max-width: calc(100% - 40px);
+    width: 100%;
+    max-width: 800px;
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
 }
 
@@ -193,11 +201,12 @@ h2 {
 .skills-section {
     background-color: rgba(17, 17, 17, 0.9);
     padding: 40px 20px;
-    margin: 30px auto;
+    margin: 30px 20px;
     border-radius: 15px;
-    max-width: 90%;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
+    box-sizing: border-box;
 }
 
 .skills-grid {
@@ -241,11 +250,12 @@ h2 {
 .contact-section {
     background-color: rgba(17, 17, 17, 0.9);
     padding: 40px 20px;
-    margin: 30px auto;
+    margin: 30px 20px;
     border-radius: 15px;
-    max-width: 90%;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
+    box-sizing: border-box;
 }
 
 .contact-methods {
@@ -340,11 +350,12 @@ h2 {
 .consulting-intro {
     background-color: rgba(17, 17, 17, 0.9);
     padding: 40px 20px;
-    margin: 30px auto;
+    margin: 30px 20px;
     border-radius: 15px;
-    max-width: 90%;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
+    box-sizing: border-box;
 }
 
 .consulting-intro ul {
@@ -373,11 +384,12 @@ h2 {
 .consulting-services {
     background-color: rgba(17, 17, 17, 0.9);
     padding: 40px 20px;
-    margin: 30px auto;
+    margin: 30px 20px;
     border-radius: 15px;
-    max-width: 90%;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
+    box-sizing: border-box;
 }
 
 .services-grid {
@@ -436,11 +448,12 @@ h2 {
 .expertise-areas {
     background-color: rgba(17, 17, 17, 0.9);
     padding: 40px 20px;
-    margin: 30px auto;
+    margin: 30px 20px;
     border-radius: 15px;
-    max-width: 90%;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
+    box-sizing: border-box;
 }
 
 .expertise-grid {
@@ -478,11 +491,12 @@ h2 {
 .tech-stack {
     background-color: rgba(17, 17, 17, 0.9);
     padding: 40px 20px;
-    margin: 30px auto;
+    margin: 30px 20px;
     border-radius: 15px;
-    max-width: 90%;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
+    box-sizing: border-box;
 }
 
 .tech-categories {
@@ -520,11 +534,12 @@ h2 {
 .how-it-works {
     background-color: rgba(17, 17, 17, 0.9);
     padding: 40px 20px;
-    margin: 30px auto;
+    margin: 30px 20px;
     border-radius: 15px;
-    max-width: 90%;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
+    box-sizing: border-box;
 }
 
 .process-steps {
@@ -581,14 +596,19 @@ h2 {
         font-size: 2.5em;
     }
 
+    p {
+        font-size: 1em;
+    }
+
     .nav-menu {
         gap: 15px;
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
 
     .description, .portfolio, .skills-section, .contact-section {
-        padding: 20px;
-        width: 90%;
+        padding: 25px 20px;
+        margin: 20px 15px !important;
+        width: calc(100% - 30px);
     }
 
     .portfolio-gallery img {
@@ -615,25 +635,63 @@ h2 {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
 }
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
+        margin-bottom: 10px;
     }
 
     p {
-        font-size: 0.9em;
+        font-size: 0.85em;
+        margin: 0.8em auto;
+        padding: 0 15px;
+        max-width: 100%;
     }
 
     .nav-menu {
-        gap: 10px;
-        font-size: 0.8em;
+        gap: 8px;
+        font-size: 0.75em;
+        flex-wrap: wrap;
+    }
+
+    .nav-logo {
+        font-size: 1.2em;
     }
 
     .description, .portfolio, .skills-section, .contact-section {
-        padding: 15px;
-        width: 95%;
+        padding: 20px 15px;
+        margin: 15px 10px !important;
+        width: calc(100% - 20px);
+    }
+
+    .portfolio-gallery {
+        gap: 10px;
     }
 
     .portfolio-gallery img {
@@ -643,12 +701,18 @@ h2 {
 
     .contact-btn {
         padding: 8px 12px;
-        font-size: 0.8em;
+        font-size: 0.75em;
+        gap: 5px;
+    }
+
+    .btn-icon {
+        font-size: 1em;
     }
 
     .profile {
         width: 80px;
         height: 80px;
+        margin-bottom: 15px;
     }
 
     .skills li {
@@ -661,17 +725,25 @@ h2 {
         gap: 15px;
     }
 
-    .cta-button {
-        padding: 10px 20px;
+    .service-card {
+        padding: 20px;
+    }
+
+    .service-card h3 {
+        font-size: 1.1em;
+    }
+
+    .service-card p {
         font-size: 0.9em;
     }
 
-    .consulting-intro,
-    .consulting-services,
-    .expertise-areas,
-    .tech-stack,
-    .how-it-works {
-        width: 95%;
+    .skill-category h3 {
+        font-size: 1.1em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
     }
 
     .services-grid {
@@ -688,5 +760,29 @@ h2 {
 
     .process-steps {
         grid-template-columns: 1fr;
+    }
+
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .subtitle {
+        font-size: 1.1em;
+        margin: 8px 0 20px;
     }
 }
